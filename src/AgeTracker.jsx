@@ -52,9 +52,13 @@ const AgeTracker = ({ birthDate }) => {
         
     }}
     > 
+     <video className="w-1/4 h-auto object-cover rounded-full  inset-0 opacity-25" autoPlay loop muted>
+        <source src="https://media.gettyimages.com/id/1302132714/video/loading-hourglass-cursor-loop-animation-4k-video.mp4?s=mp4-480x480-gi&k=20&c=5L0eJl0Ff8H_OVyTbjZCkJPzgjDNhHamnwVHgJ3yHvE=" type="video/mp4" />
+        
+      </video>
       <div style={{
         filter: "drop-shadow(0px 10px 10px rgb(0,0,0))",     }}>
-      <h1 className="text-8xl font-bold mb-10 text-gray-300 "> Shivanshu </h1>
+      <h1 className="text-8xl font-bold mb-10 text-gray-300 ">  </h1>
       <div className=" flex gap-10 text-4xl font-bold p-4 ">
         <p>Years <br />{age.years}</p>
         <p>Months <br />{age.months}</p>
