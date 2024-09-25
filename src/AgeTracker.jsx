@@ -52,7 +52,10 @@ const AgeTracker = ({ birthDate }) => {
         
     }}
     > 
-     <video className="w-1/4 h-auto object-cover rounded-full  inset-0 opacity-25" autoPlay loop muted>
+     <video 
+     style={{
+        filter: "drop-shadow(0px 10px 10px rgb(0,0,0))",     }}
+     className="w-1/4 h-auto object-cover rounded-full  inset-0 opacity-25" autoPlay loop muted>
         <source src="https://media.gettyimages.com/id/1302132714/video/loading-hourglass-cursor-loop-animation-4k-video.mp4?s=mp4-480x480-gi&k=20&c=5L0eJl0Ff8H_OVyTbjZCkJPzgjDNhHamnwVHgJ3yHvE=" type="video/mp4" />
         
       </video>
