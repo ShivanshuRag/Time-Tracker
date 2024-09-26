@@ -25,51 +25,50 @@ const AgeTracker = ({ birthDate }) => {
   }, [birthDate]);
 
   return (
-    <div className="text-center p-4 bg-rgb(86, 44, 126) text-white"
+    <div className="text-center p-4  text-white"
     style={{
-        filter: "drop-shadow(0px 10px 10px rgb(0,0,0))",
-        borderRadius: "10px",
-        backgroundColor: "rgb(86, 44, 126)",
-        padding: "20px",
-        margin: "20px",
-        boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.5)",
-        transition: "all 0.3s ease-in-out",
-        transform: "translateY(0)",
-        opacity: 1,
-        transformOrigin: "center top",
-        position: "relative",
-        zIndex: 1,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "10px",
-        height: "auto",
-        width: "auto",
-        maxWidth: "100%",
-        maxHeight: "100%",
-        overflow: "auto",
-        
-    }}
+      filter: "drop-shadow(0px 10px 10px rgb(0,0,0))",
+      borderRadius: "10px",
+      
+      padding: "20px",
+      margin: "20px",
+      boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.5)",
+      transition: "all 0.3s ease-in-out",
+      transform: "translateY(0)",
+      opacity: 1,
+      transformOrigin: "center top",
+      position: "relative",
+      zIndex: 1,
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: "10px",
+      height: "auto",
+      width: "auto",
+      maxWidth: "100%",
+      maxHeight: "100%",
+      overflow: "auto",
+      
+  }}
     > 
      <video 
      style={{
         filter: "drop-shadow(0px 10px 10px rgb(0,0,0))",     }}
-     className="w-1/4 h-auto object-cover rounded-full  inset-0 opacity-25" autoPlay loop muted>
+     className="w-1/5 h-auto object-cover rounded-full  inset-0 opacity-10" autoPlay loop muted>
         <source src="https://media.gettyimages.com/id/1302132714/video/loading-hourglass-cursor-loop-animation-4k-video.mp4?s=mp4-480x480-gi&k=20&c=5L0eJl0Ff8H_OVyTbjZCkJPzgjDNhHamnwVHgJ3yHvE=" type="video/mp4" />
         
       </video>
-      <div style={{
-        filter: "drop-shadow(0px 10px 10px rgb(0,0,0))",     }}>
+      <div >
       <h1 className="text-8xl font-bold mb-10 text-gray-300 ">  </h1>
-      <div className=" flex gap-10 text-4xl font-bold p-4 ">
+      <div className=" flex gap-9 text-nowrap text-5xl font-bold p-4  ">
         <p>Years <br />{age.years}</p>
         <p>Months <br />{age.months}</p>
         <p>Days <br /> {age.days}</p>
         <p>Hours <br /> {age.hours}</p>
         <p>Minutes <br />{age.minutes}</p>
         <p>Seconds <br />{age.seconds}</p>
-        <p>Milliseconds <br />{age.milliseconds}</p>
+        <p>M/s <br />{age.milliseconds}</p>
       </div>
       </div>
     </div>
